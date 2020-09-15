@@ -1,5 +1,10 @@
 import React from 'react'
+import ListNotes from '../ListNotes'
 
-const HomePage = () => <div>Home page here</div>
+const HomePage = () => (
+  <div>
+    <ListNotes />
+  </div>
+)
 
 export default HomePage

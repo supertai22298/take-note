@@ -1,0 +1,39 @@
+.Note {
+  cursor: pointer;
+  flex-grow: 1;
+  width: 30%;
+  padding: 15px;
+  margin: 5px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  &:last-child() {
+    flex-wrap: 10;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  & .title {
+    text-align: left;
+    font-size: 1rem;
+    margin: 5px auto;
+  }
+  & .content {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 40%;
+  }
+}
