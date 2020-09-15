@@ -1,0 +1,44 @@
+.RibbonBar {
+  width: 100%;
+  max-height: 60px;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  & .ribbon {
+    flex-grow: 1;
+
+    &.menu {
+      display: inline-block;
+      & span{
+        font-size: 1.5rem;
+      }
+    }
+
+    &.search-input {
+      flex-grow: 3;
+      & input {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        outline: transparent;
+        border: 1px solid transparent;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+      }
+    }
+
+    &.avatar {
+      & img {
+        border-radius: 50%;
+        height: 40px;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

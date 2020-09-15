@@ -21,12 +21,12 @@
     margin: 5px auto;
   }
   & .content {
-    text-align: left;
+    text-align: justify;
     font-size: 1rem;
   }
 
   @media (max-aspect-ratio: 1/1) {
-    width: 80%;
+    width: 100%;
   }
 
   @media (max-width: 480px) {
