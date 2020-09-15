@@ -57,7 +57,7 @@ const ListNotes = ({ searchQuery }) => {
         <Note
           key={note.id}
           note={note}
-          handleClick={() => history.push('/client')}
+          handleClick={() => history.push(`/detail/${note.id}`)}
         />
       ))}
     </div>
